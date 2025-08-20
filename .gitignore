@@ -44,9 +44,9 @@ logs/
 .env
 .env.local
 
-# Data files (optional - remove if you want to include data in git)
+# Data files (keeping processed data for deployment)
 data/raw/
-data/processed/
+# data/processed/  # Commented out to include processed data in deployment
 
 # Heroku
 .env.local
