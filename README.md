@@ -1,8 +1,73 @@
-# 大谷翔平成績データ 2025
+# 大谷翔平成績データ 2025 & Record Boxレコメンデーション
+
+大谷翔平の2025年シーズンの成績データを表示するWebアプリケーションと、Record Boxで再生中の曲に基づいてSpotifyでレコメンデーションを取得するアプリケーション
+
+## 🎵 Record Boxレコメンデーションアプリ
+
+### 🌟 特徴
+
+- **自動検出**: Record Boxで再生中の曲を自動検出
+- **リアルタイムレコメンデーション**: Spotify APIを使用した高精度なレコメンデーション
+- **BPM対応**: BPMに基づいたレコメンデーション
+- **プレイリスト作成**: レコメンデーションからSpotifyプレイリストを自動生成
+- **美しいUI**: モダンで直感的なWebインターフェース
+
+### 🚀 セットアップ
+
+1. **Spotify API設定**
+   ```bash
+   python spotify_setup_guide.py
+   ```
+
+2. **依存関係インストール**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Tesseract OCRインストール**
+   ```bash
+   # macOS
+   brew install tesseract
+   
+   # Ubuntu
+   sudo apt-get install tesseract-ocr
+   ```
+
+4. **アプリケーション起動**
+   ```bash
+   python recordbox_recommender_app.py
+   ```
+
+5. **ブラウザでアクセス**
+   ```
+   http://localhost:5000
+   ```
+
+### 📁 Record Boxアプリ構造
+
+```
+recordbox_detector.py              # Record Box検出モジュール
+spotify_recommender.py             # Spotify API連携モジュール
+recordbox_recommender_app.py       # メインアプリケーション
+spotify_setup_guide.py             # セットアップガイド
+templates/index.html               # Web UI
+```
+
+### 🔧 使用方法
+
+1. Record Boxを起動して曲を再生
+2. ブラウザでアプリにアクセス
+3. 「監視開始」ボタンをクリック
+4. 「テスト検出」ボタンでRecord Boxの検出をテスト
+5. 曲が検出されると自動的にレコメンデーションが表示
+
+---
+
+## ⚾ 大谷翔平成績データ 2025
 
 大谷翔平の2025年シーズンの成績データを表示するWebアプリケーション
 
-## 🌟 特徴
+### 🌟 特徴
 
 - **リアルタイムデータ**: MLB.com APIから最新データを取得
 - **比較表示**: 2024年と2025年の成績を比較
@@ -80,9 +145,15 @@ ohtani-stats-2025/
 ├── setup_scheduler.py          # スケジューラー設定
 ├── fetch_dodgers_games.py      # ドジャース試合データ取得
 ├── create_home_run_*.py        # ホームラン関連データ生成
+├── recordbox_detector.py       # Record Box検出モジュール
+├── spotify_recommender.py      # Spotify API連携モジュール
+├── recordbox_recommender_app.py # Record Boxレコメンデーションアプリ
+├── spotify_setup_guide.py      # Spotify APIセットアップガイド
 ├── data/                       # データディレクトリ
 │   ├── raw/                    # 生データ
 │   └── processed/              # 処理済みデータ
+├── templates/                  # Web UIテンプレート
+│   └── index.html              # Record BoxアプリUI
 ├── logs/                       # ログファイル
 ├── requirements.txt            # Python依存関係
 ├── Procfile                    # Heroku設定
@@ -108,7 +179,8 @@ python3 daily_update_batch.py
 ## 📱 アクセス方法
 
 ### ローカル
-- **URL**: http://localhost:8080
+- **大谷翔平アプリ**: http://localhost:8080
+- **Record Boxアプリ**: http://localhost:5000
 - **スマホ**: http://[PCのIPアドレス]:8080
 
 ### 公開後
@@ -117,14 +189,16 @@ python3 daily_update_batch.py
 ## 🛠️ 技術スタック
 
 - **Backend**: Python 3.11, Flask
-- **Frontend**: HTML5, CSS3, JavaScript, Plotly.js
+- **Frontend**: HTML5, CSS3, JavaScript, Plotly.js, Bootstrap
 - **データ処理**: Pandas, NumPy
-- **API**: MLB.com Stats API
+- **API**: MLB.com Stats API, Spotify API
+- **OCR**: Tesseract, OpenCV
 - **デプロイ**: Heroku, Gunicorn
 
 ## 📈 データソース
 
 - **MLB.com Stats API**: 公式統計データ
+- **Spotify API**: 音楽レコメンデーション
 - **更新頻度**: 毎日14:00 (日本時間)
 - **データ期間**: 2024年〜2025年
 

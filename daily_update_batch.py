@@ -68,7 +68,8 @@ def daily_update():
         ('fetch_dodgers_games.py', 'ドジャース試合データ取得'),
         ('create_home_run_chart_comparison.py', 'ホームラン比較データ生成'),
         ('create_home_run_prediction.py', 'ホームラン予測データ生成'),
-        ('create_home_run_with_prediction.py', 'ホームラン予測統合データ生成')
+        ('create_home_run_with_prediction.py', 'ホームラン予測統合データ生成'),
+        ('twitter_bot.py', 'Twitter自動投稿')
     ]
     
     # 各スクリプトを実行

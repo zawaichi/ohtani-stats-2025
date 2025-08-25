@@ -1,45 +1,39 @@
 {
   "current_week": 23,
-  "remaining_weeks": 6,
-  "remaining_games": 36,
+  "remaining_weeks": 5,
+  "remaining_games": 32,
   "prediction_rate": 1.92,
   "current_home_runs": 44,
-  "predicted_total": 55,
+  "predicted_total": 54,
   "prediction_data": [
     {
       "week": 24,
-      "weekly_home_runs": 1,
-      "cumulative_home_runs": 45,
+      "weekly_home_runs": 2,
+      "cumulative_home_runs": 46,
       "is_prediction": true
     },
     {
       "week": 25,
       "weekly_home_runs": 2,
-      "cumulative_home_runs": 47,
+      "cumulative_home_runs": 48,
       "is_prediction": true
     },
     {
       "week": 26,
       "weekly_home_runs": 2,
-      "cumulative_home_runs": 49,
+      "cumulative_home_runs": 50,
       "is_prediction": true
     },
     {
       "week": 27,
       "weekly_home_runs": 2,
-      "cumulative_home_runs": 51,
+      "cumulative_home_runs": 52,
       "is_prediction": true
     },
     {
       "week": 28,
       "weekly_home_runs": 2,
-      "cumulative_home_runs": 53,
-      "is_prediction": true
-    },
-    {
-      "week": 29,
-      "weekly_home_runs": 2,
-      "cumulative_home_runs": 55,
+      "cumulative_home_runs": 54,
       "is_prediction": true
     }
   ]

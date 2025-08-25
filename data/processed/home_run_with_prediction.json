@@ -33,8 +33,7 @@
       25,
       26,
       27,
-      28,
-      29
+      28
     ],
     "2024": [
       0,
@@ -95,12 +94,11 @@
       null,
       null,
       null,
-      45,
-      47,
-      49,
-      51,
-      53,
-      55
+      46,
+      48,
+      50,
+      52,
+      54
     ]
   },
   "csv_data": [
@@ -247,41 +245,36 @@
     {
       "週": 24,
       "2024年": null,
-      "2025年": 45
+      "2025年": 46
     },
     {
       "週": 25,
       "2024年": null,
-      "2025年": 47
+      "2025年": 48
     },
     {
       "週": 26,
       "2024年": null,
-      "2025年": 49
+      "2025年": 50
     },
     {
       "週": 27,
       "2024年": null,
-      "2025年": 51
+      "2025年": 52
     },
     {
       "週": 28,
       "2024年": null,
-      "2025年": 53
-    },
-    {
-      "週": 29,
-      "2024年": null,
-      "2025年": 55
+      "2025年": 54
     }
   ],
   "prediction_info": {
     "current_week": 23,
-    "remaining_weeks": 6,
-    "remaining_games": 36,
+    "remaining_weeks": 5,
+    "remaining_games": 32,
     "prediction_rate": 1.92,
     "current_home_runs": 44,
-    "predicted_total": 55,
-    "additional_predicted": 11
+    "predicted_total": 54,
+    "additional_predicted": 10
   }
 }
